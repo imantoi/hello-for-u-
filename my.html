@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Confession</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1c1c1c;
+            color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Animation for background */
+        .background-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 3em;
+            animation: scroll 10s linear infinite;
+            z-index: -1;
+        }
+
+        .background-animation span {
+            padding: 0 20px;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 40px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .guitar-image {
+            width: 100px;
+            margin: 20px auto;
+        }
+
+        .button {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            margin: 10px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ff9900;
+        }
+
+        .no-button {
+            background-color: #ff3333;
+        }
+
+        .no-button:hover {
+            background-color: #ff0000;
+        }
+
+        /* Hide the iframe */
+        iframe {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Animation with emojis -->
+    <div class="background-animation">
+        <span>🖤</span>
+        <span>🖤</span>
+        <span>🖤</span>
+        <span>🖤</span>
+        <span>🖤</span>
+        <span>🖤</span>
+        <span>🖤</span>
+        <span>🖤</span>
+    </div>
+
+    <!-- Hidden YouTube Embed for Background Music -->
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/FDI3PAPZ9Ns?autoplay=1&loop=1&playlist=FDI3PAPZ9Ns" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <div class="container">
+        <h1>To Haru...</h1>
+        <!-- Updated Image -->
+        <img src="https://www.dropbox.com/scl/fi/maazdfodjrovvfj0rjana/WhatsApp-Image-2024-12-14-at-16.20.16_c8841c7d.jpg?raw=1" alt="Guitar" class="guitar-image">
+        <p>"Would you like to be with me? We share the same interests and hobbies, so why not make this work? We could grow together, learning and playing the instruments we love. Or perhaps we could take this to a long-term, real connection. It's hard to find someone who shares the same passions, and that's why I like you."</p>
+        <p>What do you think? Should we take the next step?  give me your answer if u do</p>
+        <p>If you feel the same way, I hope you’ll give me the chance to make this real. Will you be mine?</p>
+
+        <a href="tel:+60197153139" class="button">Yes</a>
+        <a href="no.html" class="button no-button">No</a>
+    </div>
+</body>
+</html>
